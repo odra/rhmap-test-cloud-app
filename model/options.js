@@ -1,6 +1,5 @@
 "use strict";
 
-const DEFAULT_CRITERIA_ALIAS = ["TEST_TOKEN"]
 const DEFAULT_CONFIG_TTL = -1;
 
 class Options {
@@ -12,7 +11,7 @@ class Options {
 
 class Criteria {
     constructor() {
-        this.alias = DEFAULT_CRITERIA_ALIAS;
+        this.alias = [];
         this.deviceType;
         this.categories;
         this.variants;

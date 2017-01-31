@@ -2,7 +2,6 @@
 
 const DEFAULT_MESSAGE_SOUND = "default";
 const DEFAULT_MESSAGE_PRIORITY = "normal";
-const DEFAULT_MESSAGE_SIMPLE_PUSH = "version=1485353624158";
 
 class Message {
     constructor(alert) {
