@@ -1,11 +1,18 @@
 "use strict";
 
 const DEFAULT_CONFIG_TTL = -1;
+const DEFAULT_OPTIONS_BROADCAST = false;
 
 class Options {
     constructor() {
         this.config = new Config();
         this.criteria = new Criteria();
+        this.apps = [];
+        this.broadcast = DEFAULT_OPTIONS_BROADCAST;
+    }
+
+    get alias() {
+        return this.criteria.alias;
     }
 }
 
