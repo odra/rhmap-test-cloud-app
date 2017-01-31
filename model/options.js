@@ -11,7 +11,7 @@ class Options {
         this.broadcast = DEFAULT_OPTIONS_BROADCAST;
     }
 
-    get alias() {
+    get aliases() {
         return this.criteria.alias;
     }
 }
