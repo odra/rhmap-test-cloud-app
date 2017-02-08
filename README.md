@@ -1,9 +1,9 @@
-# FeedHenry Hello World MBaaS Server [![Build Status](https://travis-ci.org/feedhenry-templates/hello-push-cloud.png)](https://travis-ci.org/feedhenry-templates/hello-push-cloud)
+# Cloud App for Testing UPS and FH 
 
-This is a blank 'hello world' RHMAP MBaaS, demonstrating the UnifiedPush Server APIs.
+This is a cloud app to stress testing UnifiedPush Server APIs.
 
-# Group Hello World API
+# Group Push
 
-# hello [/push]
+# push [/push]
 
-'Hello world' endpoint, that triggers a push notification requests against RHMAP.
+'push' endpoint, that sends notifications to devices.
