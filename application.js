@@ -4,6 +4,10 @@ const mbaasApi = require('fh-mbaas-api');
 const express = require('express');
 const mbaasExpress = mbaasApi.mbaasExpress();
 const cors = require('cors');
+const Logger = require("./utils/logger");
+
+// All log client initialisation here
+Logger.init();
 
 // list the endpoints which you want to make securable here
 const securableEndpoints = ['/hello'];
