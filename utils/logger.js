@@ -8,7 +8,7 @@ const PATH_LOG_FILE = "public/push.log";
 class LoggerHelper {
 
     static init() {
-        fs.unlinkSync(PATH_LOG_FILE);
+        if (fs.existsSync(PATH_LOG_FILE)) fs.unlinkSync(PATH_LOG_FILE);
         winston.add(winston.transports.File, { filename: PATH_LOG_FILE });
         winston.remove(winston.transports.Console);
     }
