@@ -29,8 +29,10 @@ app.use(mbaasExpress.fhmiddleware());
 
 // Routes
 const push = require('./lib/push');
+const pushUPS = require('./lib/push-ups');
 
 app.use('/push', push);
+app.use('/push-ups', pushUPS);
 
 // Important that this is last!
 app.use(mbaasExpress.errorHandler());
