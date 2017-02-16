@@ -11,8 +11,16 @@ class Options {
         this.broadcast = DEFAULT_OPTIONS_BROADCAST;
     }
 
-    get aliases() {
-        return this.criteria.alias;
+    get alias() {
+        return this.criteria.alias[0];
+    }
+
+    set alias(alias) {
+        this.criteria.alias[0] = alias;
+    }
+
+    set appId(appId) {
+        this.apps[0] = appId;
     }
 }
 
